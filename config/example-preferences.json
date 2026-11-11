@@ -1,0 +1,17 @@
+{
+  "version": 1,
+  "instruments": ["AAPL", "MSFT", "SPY", "NVDA"],
+  "columns": 2,
+  "sync_periods": false,
+  "global_period": "1Y",
+  "vix_period": "3Y",
+  "vix_thresholds": true,
+  "vol_window": 30,
+  "sessions_per_year": 252,
+  "charts": {
+    "AAPL": {"period": "5Y", "sma": [20, 50, 200], "ema": [21], "bollinger": true, "bb_period": 20, "bb_std": 2.0, "bb_fill": true},
+    "MSFT": {"period": "1Y", "sma": [50], "ema": [21], "bollinger": false},
+    "SPY": {"period": "2Y", "sma": [20, 200], "ema": [], "bollinger": false},
+    "NVDA": {"period": "6M", "sma": [10, 20], "ema": [21, 50], "bollinger": false}
+  }
+}

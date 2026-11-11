@@ -1,0 +1,16 @@
+{
+  "version": 1,
+  "instruments": ["AAPL", "MSFT", "SPY"],
+  "columns": 2,
+  "sync_periods": true,
+  "global_period": "1Y",
+  "vix_period": "1Y",
+  "vix_thresholds": true,
+  "vol_window": 20,
+  "sessions_per_year": 252,
+  "charts": {
+    "AAPL": {"sma": [20, 50, 200], "ema": [21], "bollinger": false},
+    "MSFT": {"sma": [20, 50], "ema": [21], "bollinger": true},
+    "SPY": {"sma": [20, 50, 200], "ema": [], "bollinger": false}
+  }
+}
